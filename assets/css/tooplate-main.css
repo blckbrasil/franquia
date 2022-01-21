@@ -620,15 +620,59 @@ nav a::before {
   }
 
 
+@media (min-width: 991px) {
+	.fourth-content{
+		height:90%!important
+	}
 
+	.hidden-lg{
+		display:none!important
+	}
+	
+}
 
 /* Responsive Style */
 @media (max-width: 991px) {
+	.navbar-dark .navbar-brand{
+		display: content;
+	}
+	.bg-dark{
+		width:100%;
+		margin: 0;
+		background:#000!important;
+		height: auto;
+		padding: 20px;
+	}
+	
+	.show .navbar-nav{
+		position: relative;
+		transform: none;
+		width: 100%;
+		text-align: center;
+		left: 0;
+	}
+	
+		.hidden-xs{
+		display:none!important
+	}
+	
+	#contact h2{
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	
+	#contact input, #contact textarea, #contact select, #contact select option{
+		margin-bottom:10px;
+	}
 
   .slides .slide .content {
   width: 100%;
-  height: 90%;
+  height: 97vh;
   left: 0;
+  }
+  
+  #contact textarea{
+	  height:100px
   }
   .second-content {
   top: 250%!important;
@@ -683,8 +727,8 @@ nav a::before {
   }
   nav a {
     text-align: center;
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: 40px;
     line-height: 30px;
     display: inline-block;
   }
